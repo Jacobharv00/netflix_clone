@@ -131,6 +131,17 @@ mutation movies_actions {
       thumbnail:"https://i.imgur.com/hwUzoyu.mp4"}) {
     value{title}
   }
+  
+   billyMadison: insertmovies_by_genre(
+    value: { 
+      genre:"Action", 
+      year:1995,
+      title:"Billy Madison",
+      synopsis:"Watched this last night.",
+      duration:89,
+      thumbnail:"https://i.imgur.com/hwUzoyu.mp4"}) {
+    value{title}
+  }
 
 }
 ```
